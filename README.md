@@ -8,7 +8,7 @@ In this course we’ll work through Natural’s API for natural language process
 
 2. **Find the roots of words using stemming in Natural** - We will learn about “stemming,” the process of finding the root of words, often in order to group words by a common base root. We will look at the Porter and Lancaster Stemmers, briefly touch on Natural’s support for Russian and Spanish stemmers, and introduce the function to stem and tokenize at the same time.
 
-3. **Pluralizing words and counting numbers with inflectors in Natural** - Inflectors are the modifiers of a word that indicate grammatical categories. While Natural’s coverage of inflectors is not comprehensive, we will show how Natural can pluralize/singularize nouns and present tense verbs, and count numbers. 
+3. **Pluralizing nouns and counting numbers with inflectors in Natural** - Inflectors are the modifiers of a word that indicate grammatical categories. While Natural’s coverage of inflectors is not comprehensive, we will show how Natural can pluralize/singularize nouns and count numbers. 
 
 4. **Find sequences of words (n-grams) using Natural** - In this lesson, we will see how to find bigrams, trigrams, and any other length n-gram in a body of text. 
 
