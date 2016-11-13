@@ -1,0 +1,14 @@
+{
+  "name": "5-partsofspeech",
+  "version": "1.0.0",
+  "description": "An important component of many natural language processing projects is being able to identify the grammar of a piece of text. We’ll learn how to do that with Natural’s parts of speech (POS) tagger.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "natural": "^0.4.0"
+  }
+}
