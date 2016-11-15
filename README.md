@@ -16,7 +16,7 @@ In this course we’ll work through Natural’s API for natural language process
 
 6. **Compare similarity of strings through string distance in Natural** - We will learn how to compare how similar two strings are to each other, examining three algorithms: Jaro-Winkler, Levenshtein, and Dice’s Coefficient.  
 
-7. **Classify text into categories in Natural** - In this lesson, we will learn how to train a Naive Bayes classifier or a Logistic Regression classifier in order to classify text into categories.
+7. **Classify text into categories with machine learning in Natural** - In this lesson, we will learn how to train a Naive Bayes classifier or a Logistic Regression classifier - basic machine learning algorithms - in order to classify text into categories.
 
 8. **Identify the most important words in a document using tf-idf in Natural** - tf-idf, or term frequency-inverse document frequency, is a statistic that indicates how important a word is to the entire document. This lesson will explain term frequency and inverse document frequency, and show how we can use tf-idf to identify the most relevant words in a body of text. 
 
