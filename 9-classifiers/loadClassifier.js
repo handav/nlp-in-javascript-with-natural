@@ -1,6 +1,6 @@
 var natural = require('natural');
 
-natural.BayesClassifier.load('classifier.json', null, function(err, classifier){
+natural.LogisticRegressionClassifier.load('classifier.json', null, function(err, classifier){
     if (err){
         console.log(err);
     } else {

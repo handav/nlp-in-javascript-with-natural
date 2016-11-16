@@ -1,8 +1,8 @@
 var natural = require('natural');
 var fs = require('fs');
-var classifier = new natural.BayesClassifier();
+var classifier = new natural.LogisticRegressionClassifier();
 
-fs.readFile('training_data.json', 'utf8', function(err, data){
+fs.readFile('training_data.json', 'utf-8', function(err, data){
     if (err){
         console.log(err);
     } else {
@@ -11,67 +11,42 @@ fs.readFile('training_data.json', 'utf8', function(err, data){
     }
 });
 
-
 function train(trainingData){
     console.log("Training");
-    trainingData.forEach(function(item, i){
+    trainingData.forEach(function(item){
         classifier.addDocument(item.text, item.label);
     });
     var startTime = new Date();
     classifier.train();
     var endTime = new Date();
-    console.log("Training time:", (endTime-startTime)/1000.0, "seconds");
-    loadTestData();    
+    var trainingTime = (endTime-startTime)/1000.0;
+    console.log("Training time:", trainingTime, "seconds");
+    loadTestData();
 }
-
 
 function loadTestData(){
     console.log("Loading test data");
-    fs.readFile('test_data.json', 'utf8', function(err, data){
+    fs.readFile('test_data.json', 'utf-8', function(err, data){
         if (err){
             console.log(err);
         } else {
             var testData = JSON.parse(data);
-            test(testData);
+            testClassifier(testData);
         }
     });
 }
 
-
-function test(testData){
+function testClassifier(testData){
     console.log("Testing classifier");
     var numCorrect = 0;
-    testData.forEach(function(item, i){
+    testData.forEach(function(item){
         var labelGuess = classifier.classify(item.text);
         if (labelGuess === item.label){
-           numCorrect++; 
+            numCorrect++;
         }
     });
     console.log("Correct %:", numCorrect/testData.length);
-    saveClassifier(classifier);
 }
-
-
-
-function saveClassifier(classifier){
-    classifier.save('classifier.json', function(err, classifier){
-        if (err){
-            console.log(err);
-        } else {
-            console.log("Classifier saved");
-        }
-    });
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
