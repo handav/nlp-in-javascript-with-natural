@@ -19,7 +19,7 @@ var testData = [
     {text: 'Hang out with someone near you', label: 'spam'}
 ];
 
-trainingData.forEach(function(item, i){
+trainingData.forEach(function(item){
     classifier.addDocument(item.text, item.label);
 });
 
@@ -29,8 +29,9 @@ testData.forEach(function(item){
     var labelGuess = classifier.classify(item.text);
     console.log("\n");
     console.log(item.text);
-    console.log("Label: ", labelGuess);
+    console.log("Label:", labelGuess);
     console.log(classifier.getClassifications(item.text));
 });
+
 
 
