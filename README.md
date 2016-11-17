@@ -20,7 +20,7 @@ In this course we’ll work through Natural’s API for natural language process
 
 8. **Classify JSON text data with machine learning in Natural** - In this lesson, we will learn how to train a Naive Bayes classifier and a Logistic Regression classifier - basic machine learning algorithms - on JSON text data, and classify it into categories.
 
-9. **Using machine learning classifiers in a new project** - By this point we've seen that classification can take a long time, and with more data, it would take even longer. Luckily, Natural provides support to save your classifier. In this lesson, we will learn how to save a classifier and load it into a new project in order to classify new data.
+9. **Using machine learning classifiers in a new project** - By this point we've seen that classification can take a long time, and with more data, it would take even longer. Luckily, Natural provides support to save your classifier. In this lesson, we will learn how to save our last classifier and load it into a new project in order to classify new data.
 
 10. **Identify the most important words in a document using tf-idf in Natural** - tf-idf, or term frequency-inverse document frequency, is a statistic that indicates how important a word is to the entire document. This lesson will explain term frequency and inverse document frequency, and show how we can use tf-idf to identify the most relevant words in a body of text. 
 
