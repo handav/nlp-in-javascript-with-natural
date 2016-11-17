@@ -26,10 +26,8 @@ In this course we’ll work through Natural’s API for natural language process
 
 11. **Find a word’s definition using WordNet in Natural** - This lesson introduces WordNet, which is an important resource in natural language processing. With WordNet, we can look up a word’s definition, or find its synonyms. 
 
-12. **Graph connections in text using Natural** - This lesson will introduce Edge-Weighted Digraphs and explain how we can use them to model connections in our text. 
+12. **Search more efficiently with tries using Natural** - Tries are a data structure that provide an efficient way to search for the existence of a word or phrase in a body of text, or to search by prefix. 
 
-13. **Search more efficiently with tries using Natural** - Tries are a data structure that provide an efficient way to search for the existence of a word or phrase in a body of text, or to search by prefix. 
+13. **Include spell-check in text projects using Natural** - In this lesson, we’ll see how to use Natural’s probabilistic spell-checker, which uses the trie data structure. 
 
-14. **Include spell-check in text projects using Natural** - In this lesson, we’ll see how to use Natural’s probabilistic spell-checker, which uses the trie data structure. 
-
-15. **Check if words sound alike using Natural** - In this lesson, we’ll take a look at Natural’s phonetics feature. We’ll learn how to check whether two words sound alike, looking at both the SoundEx and Metaphone algorithms.
+14. **Check if words sound alike using Natural** - In this lesson, we’ll take a look at Natural’s phonetics feature. We’ll learn how to check whether two words sound alike, looking at both the SoundEx and Metaphone algorithms.
